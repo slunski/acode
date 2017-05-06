@@ -1,3 +1,35 @@
 AaBbCc etc with numbers (starting from 0), becouse ASCII is bloated :)
 Usefull for communication, hopefully.
 
+Realy, becouse Unicode introduced zero-length-idiocy. Or even invisible-idiocy.
+Maybe some langs need this but so far it's just allowing your app/communication
+to be hacked.
+
+.acode tables can be defined on the fly, as you need one.
+
+Currently .acode files are mappings into ASCII symbols but that is just convenience.
+
+Not used bits are considered cleared by default.
+
+You are free to do whatever in your app [part] but any interaction with any-one/thing
+should be agreed via interchanging .acode table. We will blame you if you deviate
+from agreement :)  No standard embrancing & using offensively allowed.
+
+Format: sequence of pairs of numbers and symbols.
+
+Usually just sequence of 2*pairs_number*X in computer memory where X is eg. byte (8 bits).
+Or pairs_nomber*(X+Y) where Y is size required for representing one symbol, see
+mud.acode file for example. Or whatever you need in your implementation.
+
+New line character/functionality should be encoded as one symbol/number.
+
+If you want to use just 8 bit and 256 pairs is exceeded you can use something
+similiar to UTF-8. You got the idea.
+
+Common order: XXX CHECK
+- big letters before small for simple sorting.
+- numbers instantly after alphas, punctuation instantly after al-nums.
+
+Note: don't fool yourself that mixing order (aka Ceasar cipher) is something
+meaningful in cryptography department :)
+
