@@ -1,8 +1,8 @@
 AaBbCc etc with numbers (starting from 0), becouse ASCII is bloated :)
 Usefull for communication, hopefully.
 
-Realy, becouse Unicode introduced zero-length-idiocy. Or even invisible-idiocy.
-Maybe some langs need this but so far it's just allowing your app/communication
+Realy, becouse Unicode introduced zero-length or even invisible glyphs. Maybe
+some langs need this but so far it's just allowing your app/communication
 to be hacked.
 
 .acode tables can be defined on the fly, as you need one.
